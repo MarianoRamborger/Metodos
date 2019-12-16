@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px
+}
+
+html, body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+
+header {
+
+    display: flex;
+    flex: row wrap;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: center;
+    font: 1.5em;
+    height: 3em;
+    flex-shrink: 0;
+    background-color: #f8f9fa;
+    font-size: 1.5em
+}
+
+
+nav:first-child {
+    padding-left: 25px;
+}
+
+#footer p {
+    margin-right: 20px
+}
+
+.carousel-item{
+
+    max-width: 50%;
+    left: 25%;
+    border: 2px solid black;
+    margin: 5px 0px 0px 0px;
+    
+
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: black;
+  }
+  
+  .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: Black;
+  }
+  
+
+  .hide {
+
+    display: none;
+  }
+
+  #mainText {
+
+    margin-top: 15px;
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-around;
+    flex-wrap: wrap !important;
+   
+
+  }
+
+  .infobasicaTitulo, .infobasicaCuerpo {
+    margin-top: 20px;
+    text-align:  center;
+
+  }
+
+
+  .pdf {
+
+    display: flex;
+    flex: row wrap;
+    height: 75vh
+
+  }
+
+  .tpLinks {
+
+    text-decoration: none;
+    margin-top: 20px;
+    text-align:  center;
+    color: black;
+  }
+
+  .tpLinks {
+    font-weight: bolder;
+  }
+
+
+  .divPic {
+
+    display:  flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 3px solid black;
+    max-width: 300px;
+    box-shadow: 2px 4px;
+    margin-left: 30px;
+    
+
+
+  }
+
+  .divPic img {
+
+    border: 1px solid black;
+    box-shadow: 2px 4px;
+    margin: 10px
+
+  }
+
+  .infoDiv, .programaDiv, .tpDiv {
+
+    width: 100%;
+    justify-items: center;
+
+  }
+
+  .navLinks {
+
+    color: black;
+    text-decoration: none ;
+    font-size: 30px;
+    margin: 5px
+
+  }
