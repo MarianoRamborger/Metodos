@@ -18,6 +18,7 @@
 
 <div class="content">
 
+<!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand conditionalDisplay" href="#">Home</a>
     <button class="navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,11 +43,14 @@
                   Teóricos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#"> Introducción a la materia (falta). </a>
-                  <a class="dropdown-item" href="https://drive.google.com/open?id=1WCFEiZXmxUEzMEdhyNq_8iO308xzoaWT"> Diseño experimental </a>
-
-                  <a class="dropdown-item" href="https://drive.google.com/open?id=1Sace-SpqpFzUJvN_pbltD-V0pafWGHRE"> ElectroEncefalografía (EEG) </a>
-                  <a class="dropdown-item" href="https://drive.google.com/open?id=1MkQoGVHyKQ4fiyHgaDicP5ALi_HsqnwM"> Resonancia Magnética Funcional (fMRI)</a>
+                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__intro"> Introducción a la materia. </a>
+                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__dexperimental"> Diseño experimental </a>
+                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__estadistica"> Estadistica</a>
+                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__EEG"> ElectroEncefalografía (EEG) </a>                 
+                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__SCR"> Actividad Electrodérmica</a>
+                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__fMRI"> Resonancia Magnética Funcional (fMRI)</a>
+                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__eyetracking"> Eye-tracking & Electromiografia</a>
+                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__poster"> Poster</a>
                 </div>
               </li>
 
@@ -80,6 +84,7 @@
 
   <main>
 
+    <!--Carrousel-->
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -115,7 +120,7 @@
 
 
   <div id="footer">
-        <p>Metodos Psicofisiológicos &copy; 2019.</p>
+        <p>Metodos Psicofisiológicos &copy; 2020.</p>
     </div>
 
 

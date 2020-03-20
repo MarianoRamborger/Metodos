@@ -102,6 +102,7 @@ nav:first-child {
 
   .tpLinks {
 
+    font-size: 20px;
     text-decoration: none;
     margin-top: 20px;
     text-align:  center;
@@ -139,6 +140,7 @@ nav:first-child {
 
     width: 100%;
     justify-items: center;
+ 
 
   }
 
@@ -149,4 +151,9 @@ nav:first-child {
     font-size: 30px;
     margin: 5px
 
+  }
+
+  .h3__style , .h4__style{
+    text-align: center;
+    margin: 0.5em 5em;
   }

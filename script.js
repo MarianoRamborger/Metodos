@@ -6,21 +6,25 @@ let carrousel = document.querySelector("#carouselExampleControls")
 let mainText = document.querySelector("#mainText")
 
 
-
+//Itera thru links de display condicional; maneja su rendering.
 for (let index = 0; index < linkList.length; index++) {
    
     linkList[index].addEventListener("click", (event) => {
 
         console.log(event.target)
 
+        //HOME
         if (event.target.innerHTML == "Home" && carrouselHidden == true) {
             carrousel.classList.toggle("hide")
             mainText.innerHTML = "";
             carrouselHidden = false;
         }
         
-       
-       
+        ///////////////////////////////
+        ////LA CATEDRA////////////////
+        /////////////////////////////
+
+       //INFO BASICA
         if (event.target.id == "info") {
             carrouselConcealer();
             mainText.innerHTML = "";
@@ -47,7 +51,7 @@ for (let index = 0; index < linkList.length; index++) {
 
         }
 
-
+        //PROGRAMA
         if (event.target.id == "programa") {
             carrouselConcealer();
             mainText.innerHTML = "";
@@ -67,7 +71,7 @@ for (let index = 0; index < linkList.length; index++) {
 
         }
 
-
+        //TP
         if (event.target.id == "trabajoPractico") {
             carrouselConcealer();
             mainText.innerHTML = "";
@@ -76,6 +80,10 @@ for (let index = 0; index < linkList.length; index++) {
             
             let tpDiv = document.createElement("div")
             tpDiv.className = "tpDiv"
+
+            let tpIntro = document.createElement("h3")
+            tpIntro.className = "h3__style"
+            tpIntro.innerHTML = "La práctica posee un trabajo práctico, dividido en tres entregas, cuya aprobación es requisito para aprobar la materia. El mismo comprende la reseña bibliográfica de un tema a elección (confección del estado del arte), la elaboración de un proyecto de investigación original, y su exposición en una sesión de posters."
 
             let tp1 = document.createElement("p")
             tp1.className = "tpLinks"
@@ -86,6 +94,7 @@ for (let index = 0; index < linkList.length; index++) {
             tp2.className = "tpLinks"
             tp2.innerHTML = `<a href="TP2.docx"> Instrucciones Trabajo Práctico 2 </a>`
 
+            tpDiv.appendChild(tpIntro)
             tpDiv.appendChild(tp1);
             tpDiv.appendChild(tp2);
 
@@ -93,7 +102,7 @@ for (let index = 0; index < linkList.length; index++) {
 
         }
 
-
+        //NOSOTROS
         if (event.target.id == "nosotros") {
             carrouselConcealer();
             mainText.innerHTML = "";
@@ -177,10 +186,81 @@ for (let index = 0; index < linkList.length; index++) {
 
         }
 
+         ///////////////////////////////
+        ////Teóricos////////////////
+        /////////////////////////////
+
+        if (event.target.id == "teo__intro") {
+
+            carrouselConcealer();
+            mainText.innerHTML = "";
+
+            let teoDiv = document.createElement("div")
+            teoDiv.className = "tpDiv"
+
+
+            let teoIntro = document.createElement("h3")
+            teoIntro.className = "h3__style"
+            teoIntro.innerHTML = "Clases teóricas introducción a la práctica."
+
+            let TeoOblig  = document.createElement("h4")
+            TeoOblig.className = "h4__style"
+            TeoOblig.innerHTML = "Lectura Obligatoria"
+
+            
+            let teo1 = document.createElement("p")
+            teo1.className = "tpLinks"
+            teo1.innerHTML = `<a href="TP1.docx" > Link obligatorio 1 </a> <br />   </a> `
+
+
+            let teoOpcional = document.createElement("h4")
+            teoOpcional.className = "h4__style"
+            teoOpcional.innerHTML = "Lectura Complementaria"
+
+
+            let op1 = document.createElement("p")
+            op1.className = "tpLinks"
+            op1.innerHTML = `<a href="#"> Link Optativo 1 </a> <br /> <a href="#"> Link Optativo 2 </a> <br /> <a href="#"> Link Optativo 3 </a> `
+
+
+            teoDiv.appendChild(teoIntro)
+
+            teoDiv.appendChild(TeoOblig)
+            teoDiv.appendChild(teo1)
+
+            teoDiv.appendChild(teoOpcional)
+            teoDiv.appendChild(op1)
+
+
+            mainText.appendChild(teoDiv)
+
+            
+        }
+
+
+        if (event.target.id == "teo__dexperimental") {
+
+            createLinks(
+                "Clase de diseño experimental",
+                ["blabla", "blebleble"],
+                ["www.w3schools.com/html/default.asp", "www.reddit.com"],
+                ["wii", "wuuu"],
+                ["www.google.com.ar", "www.reddit.com"]
+            )
+
+        }
+
+
+         ///////////////////////////////
+        ////Prácticos////////////////
+        /////////////////////////////
+
+
     })
 
     
 }
+
 
 let carrouselConcealer = () => {
 
@@ -190,5 +270,53 @@ let carrouselConcealer = () => {
         carrouselHidden = true
    
     }
+
+}
+
+
+// Recibe arrays de titulos, links, y los spawnea automáticamente. Pastear los links SIN http(s)
+let createLinks = (clase, titulObligatorio, obligatorios, optativos, titulOptativo) => {
+
+carrouselConcealer();
+mainText.innerHTML = "";
+
+let teoDiv = document.createElement("div")
+teoDiv.className = "tpDiv"
+
+let teoIntro = document.createElement("h3")
+teoIntro.className = "h3__style"
+teoIntro.innerHTML = `${clase}`
+
+let TeoOblig  = document.createElement("h4")
+TeoOblig.className = "h4__style"
+TeoOblig.innerHTML = "Lectura Obligatoria"
+
+
+let teoOpcional = document.createElement("h4")
+teoOpcional.className = "h4__style"
+teoOpcional.innerHTML = "Lectura Complementaria"
+
+teoDiv.appendChild(teoIntro)
+teoDiv.appendChild(TeoOblig)
+
+for (let i = 0; i < obligatorios.length; i++) {
+
+    let linkNuevo = document.createElement('p')
+    linkNuevo.className = "tpLinks"
+    linkNuevo.innerHTML = `<a href="http://${obligatorios[i]}"> ${titulObligatorio[i]} </a>`
+    teoDiv.appendChild(linkNuevo)
+}
+
+
+teoDiv.appendChild(teoOpcional)
+
+for (let i = 0; i < optativos.length; i++) {
+    let linkNuevo = document.createElement('p')
+    linkNuevo.className = "tpLinks"
+    linkNuevo.innerHTML = `<a href="http://${optativos[i]}"> ${titulOptativo[i]} </a>`
+    teoDiv.appendChild(linkNuevo)
+}
+
+mainText.appendChild(teoDiv)
 
 }
