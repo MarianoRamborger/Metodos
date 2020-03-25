@@ -11,7 +11,7 @@ for (let index = 0; index < linkList.length; index++) {
    
     linkList[index].addEventListener("click", (event) => {
 
-        console.log(event.target)
+      
 
         //HOME
         if (event.target.innerHTML == "Home" && carrouselHidden == true) {
@@ -190,66 +190,206 @@ for (let index = 0; index < linkList.length; index++) {
         ////Teóricos////////////////
         /////////////////////////////
 
-        if (event.target.id == "teo__intro") {
-
-            carrouselConcealer();
-            mainText.innerHTML = "";
-
-            let teoDiv = document.createElement("div")
-            teoDiv.className = "tpDiv"
 
 
-            let teoIntro = document.createElement("h3")
-            teoIntro.className = "h3__style"
-            teoIntro.innerHTML = "Clases teóricas introducción a la práctica."
 
-            let TeoOblig  = document.createElement("h4")
-            TeoOblig.className = "h4__style"
-            TeoOblig.innerHTML = "Lectura Obligatoria"
+        // if (event.target.id == "teo__intro") {
+
+        //     createLinks(
+        //         "Clase de introducción",
+        //         []
+        //     )
 
             
-            let teo1 = document.createElement("p")
-            teo1.className = "tpLinks"
-            teo1.innerHTML = `<a href="TP1.docx" > Link obligatorio 1 </a> <br />   </a> `
-
-
-            let teoOpcional = document.createElement("h4")
-            teoOpcional.className = "h4__style"
-            teoOpcional.innerHTML = "Lectura Complementaria"
-
-
-            let op1 = document.createElement("p")
-            op1.className = "tpLinks"
-            op1.innerHTML = `<a href="#"> Link Optativo 1 </a> <br /> <a href="#"> Link Optativo 2 </a> <br /> <a href="#"> Link Optativo 3 </a> `
-
-
-            teoDiv.appendChild(teoIntro)
-
-            teoDiv.appendChild(TeoOblig)
-            teoDiv.appendChild(teo1)
-
-            teoDiv.appendChild(teoOpcional)
-            teoDiv.appendChild(op1)
-
-
-            mainText.appendChild(teoDiv)
-
-            
-        }
+        // }
 
 
         if (event.target.id == "teo__dexperimental") {
 
             createLinks(
-                "Clase de diseño experimental",
-                ["blabla", "blebleble"],
-                ["www.w3schools.com/html/default.asp", "www.reddit.com"],
-                ["wii", "wuuu"],
-                ["www.google.com.ar", "www.reddit.com"]
+                "Clase teórica de diseño experimental",
+                ["Diseño Experimental"],
+                ["drive.google.com/open?id=1WCFEiZXmxUEzMEdhyNq_8iO308xzoaWT"],
+                ["drive.google.com/file/d/1gLZULAkNb2n_Z_yOEFIOExqdnsqdbDM8/view?usp=sharing"],
+                ["Experimental Design booklet"]
             )
 
         }
 
+
+        if (event.target.id == "teo__estadistica") {
+
+            createLinks(
+                "Clase teórica de estadistica",
+                ["Clase 1", "Clase 2"],
+                ["drive.google.com/open?id=1vjuVXe5fdXKDGsJ58p9PPLmLUp7MprnA", "drive.google.com/open?id=1-qtA15ZWHEK-Rgto-k1JeUTjWKabSyTh"],
+                ["drive.google.com/open?id=1vZF1A1P7TPI3gcbBAUfrrch3uuYNLzPU"], ["Estadistica (Mini)"]
+
+            )
+        }
+
+        if (event.target.id == "teo__EEG") {
+            
+            createLinks(
+                "Clase de electroencefalografía & potenciales relacionados a eventos.",
+                ["Clase 1", "Clase 2"],
+                ["drive.google.com/open?id=1zzkmfUUtlvUiJ2EN1MO4V35ZCANzPOwZ","drive.google.com/open?id=1R8EjS1lDAiOCNUMSeYnwvkNKkLzJYtOQ"],
+                ["drive.google.com/open?id=1f5_u7Ihd3BTq5WmSTI7e9J4NHJC-2F2M"],
+                ["EEG booklet"]
+            )
+        }
+
+        if (event.target.id == "teo__SCR") {
+
+            createLinks(
+                "Clase de Actividad Electrodérmica",
+                ["Clase 1"],
+                ["drive.google.com/open?id=1HulGhi7IslZj9fjVOMocPdtt7S9V00-c"],
+                ["drive.google.com/open?id=1ama2ab7WYwNFHxJo9GK1LnpGfmDIZrYQ"],
+                ["SCR booklet"]
+            )
+        }
+
+        if (event.target.id == "teo__fMRI") {
+
+            createLinks(
+                "Clase de Resonancia Magnética Funcional",
+                ["Clase 1"],
+                ["drive.google.com/open?id=1wwgfyT0oju3A5eHy_DgCm-dJFRAu7Grn"],
+                [],
+                []
+            )
+        }
+
+
+        if (event.target.id == "teo__eyetracking") {
+            
+            createLinks(
+                "Clase de Eyetracking & Electromiografía",
+                ["Clase 1"],
+                ["drive.google.com/open?id=1UC5HcgJ3-tPe6E8MrW5Jxq5U0lkHt1Ci"],
+                ["drive.google.com/open?id=1lRoSjFsOL8nqBd_bKYxfLpGfxkWxggT4", "drive.google.com/open?id=1vEqNBffeFLSfeTg4UC1BokYx7PVuvP7R"],
+                ["Eyetracking booklet", "Facial expressions booklet"]
+                
+            )
+        }
+
+        if (event.target.id == "teo__poster") {
+            createLinks(
+                "Clase de Poster",
+                ["Clase 1"],
+                ["drive.google.com/open?id=1ydHdIZAPnayz35daHb9tJYbo7fx1c0vC"],
+                ["drive.google.com/open?id=19e-D9ZCw7qBSmt_oUv7IrEkh9aVoCSlp"],
+                ["Como hacer un buen poster"]
+            )
+        }
+
+
+        if (event.target.id == "pr__intro") {
+            createLinks(
+                "Clase introductoria",
+                ["Clase 1"],
+                ["drive.google.com/open?id=16m24cUpXIVsOUiJBdub-RxAmvfnBN51e"],
+                ["drive.google.com/open?id=18s5LHhdku8weAttKyOUOo87pu_pKabvt"],
+                ["Como insertarse en la investigación"]
+            )
+        }
+
+        if (event.target.id == "pr__paper") {
+            createLinks(
+                "Clase de paper",
+                ["Clase 1", "Como hacer el TP"],
+                ["drive.google.com/open?id=14HH_seJarnpW0pbWA6zHlaDU2GhAKl0H", "drive.google.com/open?id=1GBeo5llXbDfIWS-oA0CP2XlYjMRParXd"],
+                ["drive.google.com/open?id=1dfCd-bOKYTkLKYpKMD5gEL-W4ScAZG8u"],
+                ["Como obtener papers."]
+            )
+        }
+
+        if (event.target.id == "pr__estadistica") {
+            createLinks(
+                "Clase práctica de estadistica",
+                ["Clase 1"],
+                ["drive.google.com/open?id=1IHxc1DVz9_pzvMhrsX8Hwvm_6Ewo3aUI"],
+                [], []
+
+            )
+        }
+
+        if (event.target.id == "pr__scr") {
+            createLinks(
+                "Clase práctica de Actividad Electrodérmica",
+                ["Clase 1"],
+                ["drive.google.com/open?id=1FsynfouPeV9ZceK1mLyy3xtiIipZ3hWG"],
+                [], []
+            )
+        }
+
+        if (event.target.id == "pr__eeg") {
+            createLinks(
+                "Clase práctica de EEG",
+                ["Clase 1"],
+                ["drive.google.com/open?id=19E9BJg19_GbXRRXbYqcL4I8-zoEUGO2O]"],
+                [
+                "drive.google.com/open?id=1f5_u7Ihd3BTq5WmSTI7e9J4NHJC-2F2M",
+                "drive.google.com/open?id=1KT3zLqa7bvPNUfbl3VwGpYNpHe02Pmv5", 
+                "drive.google.com/open?id=1bTrAGA7N_MzJIwFfqTnlaYgPlz9zBYPv",
+                "drive.google.com/open?id=1pXEaYlMX1lmjyG7s0PQK5LOnECrMz1iC",
+                "drive.google.com/open?id=1w9AEqDfU0hHXdj55ciZPqSEYvPYegwED",
+                "drive.google.com/open?id=1169xeIy5TAPMmfjWjR5lepC5kOTAlWKk"
+                ],
+                [
+                    "Eeg booklet",
+                    "Paper ondas alfa",
+                    "Paper ondas beta",
+                    "Paper ondas delta",
+                    "Paper ondas gamma",
+                    "Paper ondas theta"
+                ]
+            )
+        }
+
+        if (event.target.id == "pr__erp") {
+            createLinks(
+                "Clase Práctica de potenciales evocados",
+                ["Clase 1"],
+                ["drive.google.com/open?id=1nHCkDUlIn85E7498p_4eU_kVSsFeS4OG"],
+                [], []
+            )
+        }
+
+        if (event.target.id == "pr__fmri") {
+            createLinks(
+                "Clase práctica de fMRI",
+                ["Clase 1"],
+                ["drive.google.com/open?id=1nV_BCWuUc3UcKeFMSf07rAIrNifpQTxK"],
+                [] , []
+
+            )
+        }
+
+        if (event.target.id == "pr__animales") {
+            createLinks(
+            "Clase de modelos animales",
+            ["Parte 1", "Parte 2"],
+            ["drive.google.com/open?id=1Y2_hDF5fCaDsSLcyM940CHLqXOY6PdDR", "drive.google.com/open?id=1Mrl_wuHC0e1DY--c51WoluIuS7W9707w"],
+            [], []
+            )
+        }
+
+
+
+        // if (event.target.id == "pr__scr") {
+        //     createLinks(
+        //         "Clase práctica de Actividad Electrodérmica",
+        //         [""]
+        //     )
+        // }
+
+
+
+
+
+        //let createLinks = (clase, titulObligatorio, obligatorios, optativos, titulOptativo) => {
 
          ///////////////////////////////
         ////Prácticos////////////////
@@ -307,6 +447,7 @@ for (let i = 0; i < obligatorios.length; i++) {
     teoDiv.appendChild(linkNuevo)
 }
 
+if (optativos.length > 0 ){
 
 teoDiv.appendChild(teoOpcional)
 
@@ -315,6 +456,7 @@ for (let i = 0; i < optativos.length; i++) {
     linkNuevo.className = "tpLinks"
     linkNuevo.innerHTML = `<a href="http://${optativos[i]}"> ${titulOptativo[i]} </a>`
     teoDiv.appendChild(linkNuevo)
+}
 }
 
 mainText.appendChild(teoDiv)
