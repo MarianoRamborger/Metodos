@@ -18,7 +18,6 @@
 
 <div class="content">
 
-<!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand conditionalDisplay" href="#">Home</a>
     <button class="navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,14 +42,11 @@
                   Teóricos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <!-- <a class="dropdown-item conditionalDisplay" href="#" id="teo__intro"> Introducción a la materia. </a> -->
-                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__dexperimental"> Diseño experimental </a>
-                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__estadistica"> Estadistica</a>
-                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__EEG"> ElectroEncefalografía (EEG) </a>                 
-                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__SCR"> Actividad Electrodérmica (SCR)</a>
-                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__fMRI"> Resonancia Magnética Funcional (fMRI)</a>
-                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__eyetracking"> Eye-tracking & Electromiografia</a>
-                  <a class="dropdown-item conditionalDisplay" href="#" id="teo__poster"> Poster</a>
+                  <a class="dropdown-item" href="#"> Introducción a la materia (falta). </a>
+                  <a class="dropdown-item" href="https://drive.google.com/open?id=1WCFEiZXmxUEzMEdhyNq_8iO308xzoaWT"> Diseño experimental </a>
+
+                  <a class="dropdown-item" href="https://drive.google.com/open?id=1Sace-SpqpFzUJvN_pbltD-V0pafWGHRE"> ElectroEncefalografía (EEG) </a>
+                  <a class="dropdown-item" href="https://drive.google.com/open?id=1MkQoGVHyKQ4fiyHgaDicP5ALi_HsqnwM"> Resonancia Magnética Funcional (fMRI)</a>
                 </div>
               </li>
 
@@ -59,16 +55,15 @@
                       Prácticos
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item conditionalDisplay" href="#" id="pr__intro"> Introducción a la materia. </a>                     
-                      <a class="dropdown-item conditionalDisplay" href="#" id="pr__paper"> Introducción al "Paper". </a>
-                      <a class="dropdown-item conditionalDisplay" href="#" id="pr__estadistica"> Estadistica </a>
-                      <a class="dropdown-item conditionalDisplay" href="#" id="pr__eeg"> ElectroEncefalografía (EEG) </a>
-                      <a class="dropdown-item conditionalDisplay" href="#" id="pr__erp"> Potenciales Evocados (ERP) </a>
-                      <a class="dropdown-item conditionalDisplay" href="#" id="pr__scr"> Respuesta electrodérmica de la piel (SCR) </a>
-                      <a class="dropdown-item conditionalDisplay" href="#" id="pr__fmri"> Resonancia Magnética funcional (fMRI) </a>
-                      <a class="dropdown-item conditionalDisplay" href="#" id="pr__animales"> Modelos Animales</a>
-                      <!-- <a class="dropdown-item conditionalDisplay" href="#" id="pr__programación"> Programación</a> -->
-                      <!-- <a class="dropdown-item" href="https://drive.google.com/open?id=1ydHdIZAPnayz35daHb9tJYbo7fx1c0vC"> Poster</a> -->
+                      <a class="dropdown-item" href="https://drive.google.com/open?id=16m24cUpXIVsOUiJBdub-RxAmvfnBN51e"> Introducción a la materia. </a>
+                      <a class="dropdown-item" href="https://drive.google.com/open?id=1F7neLQPnkNnYtSUWgBKlVYnjPvGdOK0XKOfRgd094-4"> Diseño experimental </a>
+                      <a class="dropdown-item" href="https://drive.google.com/open?id=1Sace-SpqpFzUJvN_pbltD-V0pafWGHRE"> Introducción al "Paper". </a>
+                      <a class="dropdown-item" href="https://drive.google.com/open?id=1e817aJPC9QSgEawfqwLIov9CAM7JmpC7"> Estadistica </a>
+                      <a class="dropdown-item" href="https://drive.google.com/open?id=1Sace-SpqpFzUJvN_pbltD-V0pafWGHRE"> ElectroEncefalografía (EEG) </a>
+                      <a class="dropdown-item" href="https://drive.google.com/open?id=1UC5HcgJ3-tPe6E8MrW5Jxq5U0lkHt1Ci"> Respuesta electrodérmica de la piel (SCR) </a>
+                      <a class="dropdown-item" href="https://drive.google.com/open?id=1My2u2J_AU-l4Vbgk2cwXpPZx7Gj_o-JD"> Modelos Animales</a>
+                      <a class="dropdown-item" href="https://drive.google.com/open?id=1T54TdJjvZbXG_aunpUygnv0atkgUOYvA"> Programación</a>
+                      <a class="dropdown-item" href="https://drive.google.com/open?id=1ydHdIZAPnayz35daHb9tJYbo7fx1c0vC"> Poster</a>
                     </div>
                   </li>
       
@@ -85,7 +80,6 @@
 
   <main>
 
-    <!--Carrousel-->
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -121,7 +115,7 @@
 
 
   <div id="footer">
-        <p>Metodos Psicofisiológicos &copy; 2020.</p>
+        <p>Metodos Psicofisiológicos &copy; 2019.</p>
     </div>
 
 
