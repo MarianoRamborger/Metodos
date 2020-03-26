@@ -104,84 +104,7 @@ for (let index = 0; index < linkList.length; index++) {
 
         //NOSOTROS
         if (event.target.id == "nosotros") {
-            carrouselConcealer();
-            mainText.innerHTML = "";
-
-
-            // Mario
-             
-            let divPicMario = document.createElement("div")
-            let divImgMario = document.createElement("img")
-            let divTxtMario = document.createElement("p")
-            divPicMario.className = "divPic"
-
-            divImgMario.src = `foto.png`
-            divTxtMario.innerHTML = "Descripción 1"
-
-            divPicMario.appendChild(divImgMario);
-            divPicMario.appendChild(divTxtMario);
-            mainText.appendChild(divPicMario);
-
-            // Mariano
-
-            let divPicMariano = document.createElement("div")
-            let divImgMariano = document.createElement("img")
-            let divTxtMariano = document.createElement("p")
-            divPicMariano.className = "divPic"
-
-            divImgMariano.src = `foto.png`
-            divTxtMariano.innerHTML = "Descripción 2"
-
-            divPicMariano.appendChild(divImgMariano);
-            divPicMariano.appendChild(divTxtMariano);
-            mainText.appendChild(divPicMariano);
-
-            // Vale 
-
-            let divPicVale = document.createElement("div")
-            let divImgVale = document.createElement("img")
-            let divTxtVale = document.createElement("p")
-            divPicVale.className = "divPic"
-
-            divImgVale.src = `foto.png`
-            divTxtVale.innerHTML = "Descripción 3"
-
-            divPicVale.appendChild(divImgVale);
-            divPicVale.appendChild(divTxtVale);
-            mainText.appendChild(divPicVale);
-
-            // Javi
-
-            let divPicJavi = document.createElement("div")
-            let divImgJavi = document.createElement("img")
-            let divTxtJavi = document.createElement("p")
-            divPicJavi.className = "divPic"
-
-            divImgJavi.src = `foto.png`
-            divTxtJavi.innerHTML = "Descripción 4"
-
-            divPicJavi.appendChild(divImgJavi);
-            divPicJavi.appendChild(divTxtJavi);
-            mainText.appendChild(divPicJavi);
-
-            // Caro
-
-            let divPicCaro = document.createElement("div")
-            let divImgCaro = document.createElement("img")
-            let divTxtCaro = document.createElement("p")
-            divPicCaro.className = "divPic"
-
-            divImgCaro.src = `foto.png`
-            divTxtCaro.innerHTML = "Descripción 2"
-
-            divPicCaro.appendChild(divImgCaro);
-            divPicCaro.appendChild(divTxtCaro);
-            mainText.appendChild(divPicCaro);
-
-
-            
-            
-        
+            createMemPage()
 
 
         }
@@ -461,4 +384,125 @@ for (let i = 0; i < optativos.length; i++) {
 
 mainText.appendChild(teoDiv)
 
+}
+
+let createMemPage = () => {
+    carrouselConcealer();
+            mainText.innerHTML = "";
+
+            let miembros = [
+                { 
+                    nombre : "Mario Andreau",
+                    img : "mario.jpg",
+                    desc : `Jorge Mario Andreau finalizó sus estudios de grado en Psicología el año 2002. Becado por el gobierno Japonés, realizó estudios de Maestría y Doctorado en la Universidad de Kyoto. Finalizó su doctorado en el año 2011. Su tesis doctoral versó sobre la actividad de las neuronas de la corteza prefrontal de monos macacos, durante tareas de recuperación de memoria. En el año 2012, realizó un Fellowship en la Universidad de Bonn (Alemania), utilizando el método Patch-Clamp para el estudio de la dinámica del calcio en astrocitos y células gliales NG2, en ratones transgénicos.  Desde su regreso al país, se desempeña como investigador en el Instituto de Investigaciones de la Facultad de Psicología y Psicopedagogía de la USAL y en el Instituto de Biología y Medicina Experimental (IBYME), en donde realiza investigaciones con la metodología de Electroencefalograma (EEG) y potenciales relacionados con eventos (ERP). El Dr. Andreau es además profesor titular de las cátedras de Neurociencias I, II y III de la Universidad del Salvador y Director del Instituto de Investigación de la Facultad de Psicología y Psicopedagogía de la USAL desde Octubre de 2016.`,
+                    Id: "Mario"
+                },
+                {
+                    nombre : "Mariano Ramborger",
+                    img : "foto.png",
+                    desc :  "Mariano Ramborger se recibió como licenciado en Psicología en el año 2014, en la Universidad de Buenos Aires. Comenzó sus estudios de doctorado en el Centro de Estudios Farmacológicos y Botánicos (CEFyBO), es investigando sobre los efectos epigenéticos del estrés prenatal.",
+                    Id: "Mariano"
+                },
+                {
+                    nombre : "Valeria Pedrón",
+                    img : "foto.png",
+                    desc : "Placeholder",
+                    Id: "Valeria"
+                },
+                {
+                    nombre : "Javier Muñiz",
+                    img : "foto.png",
+                    desc : `Javier Andrés Muñiz estudió en la Universidad Nacional de Quilmes y obtuvo el título de Lic. en Biotecnología en el año 2013.
+                    Durante su carrera de grado realizó una pasantía en el laboratorio de Citoarquitectura y Plasticidad Neuronal (ININCA-CONICET).
+                    Luego, en el 2014, realizo el doctorado en el Instituto de Investigaciones Farmacológicas (ININFA-UBA-CONICET), de la Facultad de Farmacia y Bioquímica, obteniendo en el 2019 el titulo de Doctor de la Universidad de Buenos Aires en el área de ciencias medicas.
+                    Actualmente se encuentra realizando un post-doc en el IBYME-INGEBI sobre el estudio de procesos fisiológicos y patogénicos mediados por proteínas que alteran el transporte en desordenes neurodegenerativos.`,
+                    Id: "Javier"
+                },
+                {
+                    nombre : "Carolina Shimabukuro",
+                    img : "./caro.jpg",
+                    desc : `Lic. en Psicología (UBA), comenzó investigando comunicación interespecífica entre personas y perros domésticos, y luego se abocó a la neurociencia cognitiva en humanos. Realizó su maestría en Neural & Behavioural Sciences en Tübingen, Alemania, donde se dedicó a estudiar el rol del lóbulo parietal en la percepción visual utilizando técnicas como eye-tracking, fMRI, y TMS.`,
+                    Id: "Carolina"
+                }
+
+            ]
+           
+
+            for (let i = 0; i < miembros.length; i++) {
+                
+                let divPic = document.createElement("div")
+                let divImg = document.createElement("img")
+                let divA = document.createElement("a")
+                
+                divPic.className = "divPic"
+
+                divImg.src = miembros[i].img
+
+                divA.innerText = miembros[i].nombre
+                divA.className = "nameLink"
+                divA.Id = miembros[i].Id
+
+                 divPic.addEventListener("click", (event) =>   {
+                   
+                    expandMiembro(miembros[i])
+                })
+
+                divPic.addEventListener("mouseenter", (event) => {
+                    divA.classList.toggle("embolden")
+                })
+                divPic.addEventListener("mouseleave", (event) => {
+                    divA.classList.toggle("embolden")
+                })
+                
+                
+
+                divPic.appendChild(divImg)
+                divPic.appendChild(divA)
+                mainText.appendChild(divPic)
+
+
+            }
+}
+
+
+
+
+let expandMiembro = (miembro) => {
+    carrouselConcealer();
+    mainText.innerHTML = ""
+
+    let memDiv = document.createElement("div")
+    memDiv.className = "memDiv"
+
+    let memPic = document.createElement("img")
+    memPic.className = "memPic"
+    memPic.src = miembro.img
+
+    let memName = document.createElement("h2")
+    memName.innerText = miembro.nombre
+
+    let memDesc = document.createElement("p")
+    memDesc.className = "memDesc"
+    memDesc.innerText = miembro.desc
+
+    let backButton = document.createElement("button")
+    backButton.className = "memButton"
+    backButton.onclick = createMemPage
+    backButton.innerText = "Atras"
+
+
+    memDiv.appendChild(memPic)
+    memDiv.appendChild(memName)
+    memDiv.appendChild(memDesc)
+    memDiv.appendChild(backButton)
+    mainText.appendChild(memDiv)
+
+    
+
+
+    
+
+
+    
+    
 }

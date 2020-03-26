@@ -85,6 +85,8 @@ nav:first-child {
 
   }
 
+ 
+
   .infobasicaTitulo, .infobasicaCuerpo {
     margin-top: 20px;
     text-align:  center;
@@ -128,6 +130,11 @@ nav:first-child {
 
   }
 
+
+  .divPic:hover {
+    border: 3px solid red
+  }
+
   .divPic img {
 
     border: 1px solid black;
@@ -156,4 +163,53 @@ nav:first-child {
   .h3__style , .h4__style{
     text-align: center;
     margin: 0.5em 5em;
+  }
+
+  .nameLink {
+
+    color: black;
+    align-self: center;
+
+  }
+
+  .embolden {
+
+    font-weight: bold;
+  
+
+  }
+
+  .memDiv {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .memPic {
+    border: 3px solid black;
+    margin-bottom: 10px
+  }
+
+  .memDesc {
+    margin-top: 1em;
+    max-width: 50%;
+    font-size: 1.2em;
+    
+  }
+
+  .memButton {
+    margin-top: 20px;
+    width: 8%;
+    height: 10%;
+    font-size: 1.5em;
+    background-color: white;
+    border: 3px solid gray
+  }
+
+  .memButton:hover {
+    
+    border: 3px solid black
   }
