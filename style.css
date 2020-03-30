@@ -51,6 +51,11 @@ nav:first-child {
   margin-left: 25%
 }
 
+
+.carousel-inner {
+  margin-top: 10px
+}
+
   .hide {
 
     display: none;
