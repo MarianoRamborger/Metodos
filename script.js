@@ -5,6 +5,16 @@ carrouselHidden = false;
 let carrousel = document.querySelector("#carouselExampleControls")
 let mainText = document.querySelector("#mainText")
 
+if (isMobileDevice() == false) {
+    carrousel.classList.toggle("hide")
+} 
+
+if (isMobileDevice() == true) {
+    mainText.innerHTML = ""
+    mainText.innerHTML = "<h2> Version para celulares en progreso </h2>"
+}
+
+
 
 //Itera thru links de display condicional; maneja su rendering.
 for (let index = 0; index < linkList.length; index++) {
@@ -512,3 +522,8 @@ let expandMiembro = (miembro) => {
     
     
 }
+
+
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
