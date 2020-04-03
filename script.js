@@ -5,14 +5,23 @@ carrouselHidden = false;
 let carrousel = document.querySelector("#carouselExampleControls")
 let mainText = document.querySelector("#mainText")
 
-// if (isMobileDevice() == false) {
-//     carrousel.classList.toggle("hide")
-// } 
+if (isMobileDevice() == false) {
+    carrousel.classList.toggle("hide")
+   
+} 
 
-// if (isMobileDevice() == true) {
-//     mainText.innerHTML = ""
-//     mainText.innerHTML = "<h2> Version para celulares en progreso </h2>"
-// }
+if (isMobileDevice() == true) {
+     mainText.innerHTML = ""   
+    
+
+    let mobileNews = document.createElement("p")
+    mobileNews.innerHTML = `<h2> Esta es la versión de mobile, así que, en lugar del carrousel, estaría bueno arrancar con una sección de novedades o 
+    cosas importantes para el alumno. </h2>`
+    mobileNews.classList = "mobileNews"
+
+    mainText.appendChild(mobileNews)
+
+}
 
 
 
@@ -24,11 +33,27 @@ for (let index = 0; index < linkList.length; index++) {
       
 
         //HOME
+
+        
         if (event.target.innerHTML == "Home" && carrouselHidden == true) {
             carrousel.classList.toggle("hide")
             mainText.innerHTML = "";
             carrouselHidden = false;
         }
+
+        if (isMobileDevice() == true) {
+           carrouselConcealer()
+            mainText.innerHTML = ""   
+           
+           let mobileNews = document.createElement("p")
+           mobileNews.innerHTML = `<h2> Esta es la versión de mobile, así que, en lugar del carrousel, estaría bueno arrancar con una sección de novedades o 
+           cosas importantes para el alumno. </h2>`
+           mobileNews.classList = "mobileNews"
+       
+           mainText.appendChild(mobileNews)
+       
+       }
+
         
         ///////////////////////////////
         ////LA CATEDRA////////////////
@@ -73,6 +98,10 @@ for (let index = 0; index < linkList.length; index++) {
             let programa = document.createElement("div")
             programa.className = "pdf"
             programa.innerHTML =  `<object width="100%" data="programa.pdf"></object>`
+            
+            
+
+            
 
             programaDiv.appendChild(programa)
             mainText.appendChild(programaDiv);
