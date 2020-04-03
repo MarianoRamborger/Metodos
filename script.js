@@ -15,8 +15,8 @@ if (isMobileDevice() == true) {
     
 
     let mobileNews = document.createElement("p")
-    mobileNews.innerHTML = `<h2> Esta es la versión de mobile, así que, en lugar del carrousel, estaría bueno arrancar con una sección de novedades o 
-    cosas importantes para el alumno. </h2>`
+    mobileNews.innerHTML = `<h3> Esta es la versión de mobile, así que, en lugar del carrousel, estaría bueno arrancar con una sección de novedades o 
+    cosas importantes para el alumno. </h3>`
     mobileNews.classList = "mobileNews"
 
     mainText.appendChild(mobileNews)

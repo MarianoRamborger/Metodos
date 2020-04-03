@@ -24,6 +24,12 @@ header {
     justify-content: center;
 }
 
+header h1 {
+
+  margin: 1% 0px;
+
+}
+
 
 #footer {
     display: flex;

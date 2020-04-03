@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1913814388.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Métodos Psicológicos </title>
 </head>
 <body>
     
 <header>
-    <h1> Metodos Psicofisiológicos.</h1>
+    <h1> Métodos Psicofisiológicos.</h1>
 </header>
 
 
