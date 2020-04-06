@@ -32,14 +32,14 @@ header h1 {
 
 @media only screen and (max-width: 482px) {
 
-  header {
+  /* header {
     margin: 5% 0;
     
   }
-  
+
   header h1 {
     margin-left: 25%;
-  }
+  } */
 
  
 
