@@ -36,13 +36,12 @@ header h1 {
     margin: 5% 0;
     
   }
- 
-
-  .navbar-collapse {
-    color: red
-   
+  
+  header h1 {
+    margin-left: 25%;
   }
 
+ 
 
 
 }
