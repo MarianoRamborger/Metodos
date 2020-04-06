@@ -26,7 +26,20 @@ header {
 
 header h1 {
 
-  margin: 1.5% 0px;
+  margin: 1% 0px;
+
+}
+
+@media only screen and (max-width: 482px) {
+
+  header {
+    margin-bottom: 5%
+  }
+  header h1 {
+    margin-left: 25%
+  }
+
+
 
 }
 
