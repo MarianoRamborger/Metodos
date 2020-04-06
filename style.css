@@ -144,6 +144,8 @@ nav:first-child {
 
   }
 
+ 
+
   .navLinks {
 
     color: black;
@@ -155,7 +157,7 @@ nav:first-child {
 
   .h3__style , .h4__style{
     text-align: center;
-    margin: 0.5em 5em;
+    margin: 1% 5%;
   }
 
   .nameLink {
