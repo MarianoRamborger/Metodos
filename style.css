@@ -37,11 +37,12 @@ header h1 {
     
   }
   header h1 {
-    margin-left: 25%
+    margin-left: 25%;
   }
 
-  nav {
-    margin-top: 1% 0
+  .navbar-collapse {
+    color: red
+   
   }
 
 
