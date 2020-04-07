@@ -563,7 +563,9 @@ let expandMiembro = (miembro) => {
 
     mainText.appendChild(memDiv)
 
-    target.scrollIntoView(memDiv)
+    
+    let target = document.getElementById = "jump"
+        target.scrollIntoView();
 }
 
 
