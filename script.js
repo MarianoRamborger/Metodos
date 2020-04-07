@@ -545,10 +545,8 @@ let expandMiembro = (miembro) => {
     else if (isMobileDevice() == true) {
 
         memDiv.onclick = createMemPage
+        console.log("uptodate")
     }
-
-
-
 
 
     memDiv.appendChild(memPic)
