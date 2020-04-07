@@ -546,8 +546,9 @@ let expandMiembro = (miembro) => {
         let target = document.getElementById = "jump"
         
         memDiv.onclick = createMemPage
-        console.log("uptodate1")
-        window.location.id = target;
+      
+        target.scrollIntoView();
+
     }
 
 
