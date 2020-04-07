@@ -530,46 +530,16 @@ let expandMiembro = (miembro) => {
     memDesc.className = "memDesc"
     memDesc.innerText = miembro.desc
 
-    let backButton
-
-    if (isMobileDevice() == false) {
-        
-        backButton = document.createElement("button")
-        backButton.className = "memButton"
-        backButton.onclick = createMemPage
-        backButton.innerText = "Atras"
-        
-
-    }
-
-    else if (isMobileDevice() == true) {
-        let target = document.getElementById = "jump"
-        
-        memDiv.onclick = createMemPage
+  
+    memDiv.onclick = createMemPage
       
-        target.scrollIntoView();
-
-    }
-
 
     memDiv.appendChild(memPic)
     memDiv.appendChild(memName)
     memDiv.appendChild(memDesc)
-    
-
-    if (isMobileDevice() == false) {
-        memDiv.appendChild(backButton)
-    } 
-
     mainText.appendChild(memDiv)
 
-    
-
-
-    
-
-
-    
+    document.getElementById('jump').scrollIntoView()
     
 }
 
