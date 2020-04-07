@@ -543,11 +543,12 @@ let expandMiembro = (miembro) => {
     }
 
     else if (isMobileDevice() == true) {
-       
+        let target = document.getElementById = "jump"
         
         memDiv.onclick = createMemPage
       
-        
+        target.scrollIntoView();
+
     }
 
 
@@ -562,7 +563,13 @@ let expandMiembro = (miembro) => {
 
     mainText.appendChild(memDiv)
 
-    document.getElementById('jump').scrollIntoView()
+    
+
+
+    
+
+
+    
     
 }
 
