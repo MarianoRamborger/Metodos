@@ -12,7 +12,7 @@
 <body>
     
 <header>
-    <h1> Metodos Psicofisiológicos.</h1>
+    <h1> Métodos Psicofisiológicos</h1>
 </header>
 
 

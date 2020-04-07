@@ -54,9 +54,9 @@ header h1 {
     font: 1.5em;
     height: 3em;
     flex-shrink: 0;
-    background-color: #f8f9fa;
+   
     font-size: 1.5em;
-    margin-left: 3%
+    padding-left: 3%
 }
 
 
@@ -130,7 +130,7 @@ nav:first-child {
     display:  flex;
     flex-direction: column;
     margin: 5px;
-    border: 3px solid black;
+    border: 3px solid #f8f9fa;
     max-width: 300px;
     box-shadow: 2px 4px;
     margin-left: 30px;
@@ -141,7 +141,7 @@ nav:first-child {
 
 
   .divPic:hover {
-    border: 3px solid red
+    border: 3px solid #61AAF2
   }
 
   .divPic img {
@@ -234,9 +234,18 @@ nav:first-child {
 
   body, #footer {
     
-    background-color: yellow
+    background-color:  	 	#BCDBFA
   }
 
-  .navbar {
-    background-color: red  !important;
+  header {
+    background-color :#61AAF2
   }
+
+  header h1 {
+
+    color: #f8f9fa
+  }
+
+  /* .navbar {
+    background-color: red  !important;
+  } */
