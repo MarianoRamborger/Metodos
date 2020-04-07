@@ -563,14 +563,7 @@ let expandMiembro = (miembro) => {
 
     mainText.appendChild(memDiv)
 
-    
-
-
-    
-
-
-    
-    
+    target.scrollIntoView(memDiv)
 }
 
 
