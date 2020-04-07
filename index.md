@@ -12,7 +12,7 @@
 <body>
     
 <header>
-    <h1> Métodos Psicofisiológicos.</h1>
+    <h1> Metodos Psicofisiológicos.</h1>
 </header>
 
 
@@ -77,6 +77,7 @@
 
       <a class="navLinks " href="https://www.facebook.com/groups/283199801782256/"> <i class="fab fa-facebook"></i></a>
       <a  class="navLinks" href="mailto:Metodospsicofisiologicos@gmail.com"> <i class="far fa-envelope"></i> </a>
+      <a  class="navLinks" href="https://discord.gg/SumT4AW"> <i class="fab fa-discord"></i> </a>
 
     </div>
   </nav>
@@ -87,7 +88,7 @@
 
     <div class="caru">
     <!--Carrousel-->
-        <div id="carouselExampleControls" class="carousel slide hide carousel-fade" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade hide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="./carrupics/0.jpg" class="d-block w-100" alt="...">
