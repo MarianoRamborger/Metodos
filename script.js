@@ -76,7 +76,7 @@ for (let index = 0; index < linkList.length; index++) {
 
             let infobasicaCuerpo = document.createElement("h2")
             infobasicaCuerpo.className = "infobasicaCuerpo"
-            infobasicaCuerpo.innerHTML = `Acá iria la información que queremos mostrar`
+            infobasicaCuerpo.innerHTML = `Proximamente -- Calendario Académico`
 
 
             infoDiv.appendChild(infobasicaTitulo);
