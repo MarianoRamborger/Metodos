@@ -530,16 +530,36 @@ let expandMiembro = (miembro) => {
     memDesc.className = "memDesc"
     memDesc.innerText = miembro.desc
 
-    let backButton = document.createElement("button")
-    backButton.className = "memButton"
-    backButton.onclick = createMemPage
-    backButton.innerText = "Atras"
+    let backButton
+
+    if (isMobileDevice() == false) {
+        
+        backButton = document.createElement("button")
+        backButton.className = "memButton"
+        backButton.onclick = createMemPage
+        backButton.innerText = "Atras"
+        
+
+    }
+
+    else if (isMobileDevice() == true) {
+
+        memDiv.onclick = createMemPage
+    }
+
+
+
 
 
     memDiv.appendChild(memPic)
     memDiv.appendChild(memName)
     memDiv.appendChild(memDesc)
-    memDiv.appendChild(backButton)
+    
+
+    if (isMobileDevice() == false) {
+        memDiv.appendChild(backButton)
+    } 
+
     mainText.appendChild(memDiv)
 
     
