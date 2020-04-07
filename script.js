@@ -546,6 +546,7 @@ let expandMiembro = (miembro) => {
 
         memDiv.onclick = createMemPage
         console.log("uptodate")
+        window.location.hash = "jump";
     }
 
 
