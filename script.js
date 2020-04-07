@@ -543,10 +543,11 @@ let expandMiembro = (miembro) => {
     }
 
     else if (isMobileDevice() == true) {
-
+        let target = document.getElementById = "jump"
+        
         memDiv.onclick = createMemPage
-        console.log("uptodate")
-        window.location.id = "jump";
+        console.log("uptodate1")
+        window.location.id = target;
     }
 
 
