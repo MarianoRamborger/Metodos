@@ -234,9 +234,9 @@ nav:first-child {
 
   body, #footer {
     
-    background-color: red
+    background-color: yellow
   }
 
   .navbar {
-    background-color: green  !important;
+    background-color: red  !important;
   }
