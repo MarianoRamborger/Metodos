@@ -4,6 +4,12 @@ console.log(linkList);
 carrouselHidden = false;
 let carrousel = document.querySelector("#carouselExampleControls")
 let mainText = document.querySelector("#mainText")
+let navCollapse = document.getElementById("navbarNavDropdown")
+
+
+
+
+console.log(navCollapse)
 
 if (isMobileDevice() == false) {
     carrousel.classList.toggle("hide")
@@ -39,6 +45,7 @@ for (let index = 0; index < linkList.length; index++) {
             carrousel.classList.toggle("hide")
             mainText.innerHTML = "";
             carrouselHidden = false;
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (isMobileDevice() == true) {
@@ -51,6 +58,7 @@ for (let index = 0; index < linkList.length; index++) {
            mobileNews.classList = "mobileNews"
        
            mainText.appendChild(mobileNews)
+           navCollapse.classList = "collapse navbar-collapse"
        
        }
 
@@ -83,6 +91,7 @@ for (let index = 0; index < linkList.length; index++) {
             infoDiv.appendChild(infobasicaCuerpo);
 
             mainText.appendChild(infoDiv);
+            navCollapse.classList = "collapse navbar-collapse"
 
         }
 
@@ -99,13 +108,10 @@ for (let index = 0; index < linkList.length; index++) {
             programa.className = "pdf"
             programa.innerHTML =  `<object width="100%" data="programa.pdf"></object>`
             
-            
-
-            
 
             programaDiv.appendChild(programa)
             mainText.appendChild(programaDiv);
-
+            navCollapse.classList = "collapse navbar-collapse"
            
 
         }
@@ -114,9 +120,7 @@ for (let index = 0; index < linkList.length; index++) {
         if (event.target.id == "trabajoPractico") {
             carrouselConcealer();
             mainText.innerHTML = "";
-
-
-            
+           
             let tpDiv = document.createElement("div")
             tpDiv.className = "tpDiv"
 
@@ -138,32 +142,15 @@ for (let index = 0; index < linkList.length; index++) {
             tpDiv.appendChild(tp2);
 
             mainText.appendChild(tpDiv)
+            navCollapse.classList = "collapse navbar-collapse"
 
         }
 
         //NOSOTROS
         if (event.target.id == "nosotros") {
             createMemPage()
-
-
+            navCollapse.classList = "collapse navbar-collapse"
         }
-
-         ///////////////////////////////
-        ////Teóricos////////////////
-        /////////////////////////////
-
-
-
-
-        // if (event.target.id == "teo__intro") {
-
-        //     createLinks(
-        //         "Clase de introducción",
-        //         []
-        //     )
-
-            
-        // }
 
 
         if (event.target.id == "teo__dexperimental") {
@@ -175,7 +162,7 @@ for (let index = 0; index < linkList.length; index++) {
                 ["drive.google.com/file/d/1gLZULAkNb2n_Z_yOEFIOExqdnsqdbDM8/view?usp=sharing"],
                 ["Experimental Design booklet"]
             )
-
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
 
@@ -188,6 +175,7 @@ for (let index = 0; index < linkList.length; index++) {
                 ["drive.google.com/open?id=1vZF1A1P7TPI3gcbBAUfrrch3uuYNLzPU"], ["Estadistica (Mini)"]
 
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "teo__EEG") {
@@ -199,6 +187,7 @@ for (let index = 0; index < linkList.length; index++) {
                 ["drive.google.com/open?id=1f5_u7Ihd3BTq5WmSTI7e9J4NHJC-2F2M"],
                 ["EEG booklet"]
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "teo__SCR") {
@@ -210,6 +199,7 @@ for (let index = 0; index < linkList.length; index++) {
                 ["drive.google.com/open?id=1ama2ab7WYwNFHxJo9GK1LnpGfmDIZrYQ"],
                 ["SCR booklet"]
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "teo__fMRI") {
@@ -221,6 +211,7 @@ for (let index = 0; index < linkList.length; index++) {
                 [],
                 []
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
 
@@ -234,6 +225,7 @@ for (let index = 0; index < linkList.length; index++) {
                 ["Eyetracking booklet", "Facial expressions booklet"]
                 
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "teo__poster") {
@@ -244,6 +236,7 @@ for (let index = 0; index < linkList.length; index++) {
                 ["drive.google.com/open?id=19e-D9ZCw7qBSmt_oUv7IrEkh9aVoCSlp"],
                 ["Como hacer un buen poster"]
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
 
@@ -255,6 +248,7 @@ for (let index = 0; index < linkList.length; index++) {
                 ["drive.google.com/open?id=18s5LHhdku8weAttKyOUOo87pu_pKabvt"],
                 ["Como insertarse en la investigación"]
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "pr__paper") {
@@ -265,6 +259,7 @@ for (let index = 0; index < linkList.length; index++) {
                 ["drive.google.com/open?id=1dfCd-bOKYTkLKYpKMD5gEL-W4ScAZG8u"],
                 ["Como obtener papers."]
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "pr__estadistica") {
@@ -275,6 +270,7 @@ for (let index = 0; index < linkList.length; index++) {
                 [], []
 
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "pr__scr") {
@@ -284,6 +280,7 @@ for (let index = 0; index < linkList.length; index++) {
                 ["drive.google.com/open?id=1FsynfouPeV9ZceK1mLyy3xtiIipZ3hWG"],
                 [], []
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "pr__eeg") {
@@ -308,6 +305,7 @@ for (let index = 0; index < linkList.length; index++) {
                     "Paper ondas theta"
                 ]
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "pr__erp") {
@@ -317,6 +315,7 @@ for (let index = 0; index < linkList.length; index++) {
                 ["drive.google.com/open?id=1nHCkDUlIn85E7498p_4eU_kVSsFeS4OG"],
                 [], []
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "pr__fmri") {
@@ -327,6 +326,7 @@ for (let index = 0; index < linkList.length; index++) {
                 [] , []
 
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
 
         if (event.target.id == "pr__animales") {
@@ -336,27 +336,8 @@ for (let index = 0; index < linkList.length; index++) {
             ["drive.google.com/open?id=1Y2_hDF5fCaDsSLcyM940CHLqXOY6PdDR", "drive.google.com/open?id=1Mrl_wuHC0e1DY--c51WoluIuS7W9707w"],
             [], []
             )
+            navCollapse.classList = "collapse navbar-collapse"
         }
-
-
-
-        // if (event.target.id == "pr__scr") {
-        //     createLinks(
-        //         "Clase práctica de Actividad Electrodérmica",
-        //         [""]
-        //     )
-        // }
-
-
-
-
-
-        //let createLinks = (clase, titulObligatorio, obligatorios, optativos, titulOptativo) => {
-
-         ///////////////////////////////
-        ////Prácticos////////////////
-        /////////////////////////////
-
 
     })
 

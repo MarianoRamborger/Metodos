@@ -19,7 +19,7 @@ header {
 
     display: flex;
     flex: row wrap;
-    height: 80px;
+    height: 100px;
     align-items: center;
     justify-content: center;
 }
@@ -33,7 +33,7 @@ header h1 {
 @media only screen and (max-width: 482px) {
 
   header {
-    margin: 5% 0;
+    padding: 5% 0;
 
     text-align: center;
     
