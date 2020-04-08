@@ -17,15 +17,29 @@ if (isMobileDevice() == false) {
 } 
 
 if (isMobileDevice() == true) {
-     mainText.innerHTML = ""   
+  
     
 
-    let mobileNews = document.createElement("p")
-    mobileNews.innerHTML = `<h3> Esta es la versión de mobile, así que, en lugar del carrousel, estaría bueno arrancar con una sección de novedades o 
-    cosas importantes para el alumno. </h3>`
-    mobileNews.classList = "mobileNews"
+    let infoDiv = document.createElement("div")
+    infoDiv.className = "infoDiv"
+    
+    let infobasicaTitulo = document.createElement("h2")
+    infobasicaTitulo.className = "infobasicaTitulo"
+    infobasicaTitulo.innerHTML = `P.P.: P.I.: Métodos Psicofisiológicos <br />
+    Código 777 Cat.   Iorio, Alberto Andres <br />
+    Dictado 1° y 2° cuatrimestre  <br />`
 
-    mainText.appendChild(mobileNews)
+
+    let infobasicaCuerpo = document.createElement("h2")
+    infobasicaCuerpo.className = "infobasicaCuerpo"
+    infobasicaCuerpo.innerHTML = `Proximamente -- Calendario Académico`
+
+
+    infoDiv.appendChild(infobasicaTitulo);
+    infoDiv.appendChild(infobasicaCuerpo);
+
+    mainText.appendChild(infoDiv);
+
 
 }
 
@@ -49,16 +63,29 @@ for (let index = 0; index < linkList.length; index++) {
         }
 
         if (isMobileDevice() == true) {
-           carrouselConcealer()
-            mainText.innerHTML = ""   
-           
-           let mobileNews = document.createElement("p")
-           mobileNews.innerHTML = `<h2> Esta es la versión de mobile, así que, en lugar del carrousel, estaría bueno arrancar con una sección de novedades o 
-           cosas importantes para el alumno. </h2>`
-           mobileNews.classList = "mobileNews"
-       
-           mainText.appendChild(mobileNews)
-           navCollapse.classList = "collapse navbar-collapse"
+            carrouselConcealer();
+            mainText.innerHTML = "";
+
+            let infoDiv = document.createElement("div")
+            infoDiv.className = "infoDiv"
+            
+            let infobasicaTitulo = document.createElement("h2")
+            infobasicaTitulo.className = "infobasicaTitulo"
+            infobasicaTitulo.innerHTML = `P.P.: P.I.: Métodos Psicofisiológicos <br />
+            Código 777 Cat.   Iorio, Alberto Andres <br />
+            Dictado 1° y 2° cuatrimestre  <br />`
+
+
+            let infobasicaCuerpo = document.createElement("h2")
+            infobasicaCuerpo.className = "infobasicaCuerpo"
+            infobasicaCuerpo.innerHTML = `Proximamente -- Calendario Académico`
+
+
+            infoDiv.appendChild(infobasicaTitulo);
+            infoDiv.appendChild(infobasicaCuerpo);
+
+            mainText.appendChild(infoDiv);
+            navCollapse.classList = "collapse navbar-collapse"
        
        }
 
@@ -97,20 +124,37 @@ for (let index = 0; index < linkList.length; index++) {
 
         //PROGRAMA
         if (event.target.id == "programa") {
-            carrouselConcealer();
-            mainText.innerHTML = "";
-
-
-            let programaDiv = document.createElement("div")
-            programaDiv.className = "infoDiv"
             
-            let programa = document.createElement("div")
-            programa.className = "pdf"
-            programa.innerHTML =  `<object width="100%" data="programa.pdf"></object>`
+            if (isMobileDevice() == false) {
+
+                carrouselConcealer();
+                mainText.innerHTML = "";
+
+                let programaDiv = document.createElement("div")
+                programaDiv.className = "infoDiv"
+                
+                let programa = document.createElement("div")
+                programa.className = "pdf"
+                programa.innerHTML =  `<object width="100%" data="programa.pdf"></object>`
+                
+
+                programaDiv.appendChild(programa)
+                mainText.appendChild(programaDiv);
+          }
+
+          else if (isMobileDevice() == true){
+
+            progLink = document.createElement("a")
+            progLink.setAttribute("href", "./programa.pdf")
+            progLink.setAttribute("download", "./programa.pdf")
+            progLink.click()
             
 
-            programaDiv.appendChild(programa)
-            mainText.appendChild(programaDiv);
+          }
+
+        
+
+
             navCollapse.classList = "collapse navbar-collapse"
            
 
