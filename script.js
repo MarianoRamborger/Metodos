@@ -32,7 +32,7 @@ if (isMobileDevice() == true) {
 
     let infobasicaCuerpo = document.createElement("h2")
     infobasicaCuerpo.className = "infobasicaCuerpo"
-    infobasicaCuerpo.innerHTML = `Proximamente -- Calendario Académico`
+    infobasicaCuerpo.innerHTML = `<a href="https://docs.google.com/spreadsheets/d/11CCivIzse1Wh382Fl5CpQAtusODQ0sny0yrZIqCzgP4/edit#gid=0"> Calendario Académico </a>`
 
 
     infoDiv.appendChild(infobasicaTitulo);
@@ -78,7 +78,7 @@ for (let index = 0; index < linkList.length; index++) {
 
             let infobasicaCuerpo = document.createElement("h2")
             infobasicaCuerpo.className = "infobasicaCuerpo"
-            infobasicaCuerpo.innerHTML = `Proximamente -- Calendario Académico`
+            infobasicaCuerpo.innerHTML = `<a href="https://docs.google.com/spreadsheets/d/11CCivIzse1Wh382Fl5CpQAtusODQ0sny0yrZIqCzgP4/edit#gid=0"> Calendario Académico </a>`
 
 
             infoDiv.appendChild(infobasicaTitulo);
@@ -111,7 +111,7 @@ for (let index = 0; index < linkList.length; index++) {
 
             let infobasicaCuerpo = document.createElement("h2")
             infobasicaCuerpo.className = "infobasicaCuerpo"
-            infobasicaCuerpo.innerHTML = `Proximamente -- Calendario Académico`
+            infobasicaCuerpo.innerHTML = `<a href="https://docs.google.com/spreadsheets/d/11CCivIzse1Wh382Fl5CpQAtusODQ0sny0yrZIqCzgP4/edit#gid=0"> Calendario Académico </a>`
 
 
             infoDiv.appendChild(infobasicaTitulo);
