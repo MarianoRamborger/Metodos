@@ -123,24 +123,24 @@ for (let index = 0; index < linkList.length; index++) {
         }
 
         //PROGRAMA
-        if (event.target.id == "programa") {
-            
-            if (isMobileDevice() == false) {
-
-                carrouselConcealer();
-                mainText.innerHTML = "";
-
-                let programaDiv = document.createElement("div")
-                programaDiv.className = "infoDiv"
+            if (event.target.id == "programa") {
                 
-                let programa = document.createElement("div")
-                programa.className = "pdf"
-                programa.innerHTML =  `<object width="100%" data="programa.pdf"></object>`
-                
+                if (isMobileDevice() == false) {
 
-                programaDiv.appendChild(programa)
-                mainText.appendChild(programaDiv);
-          }
+                    carrouselConcealer();
+                    mainText.innerHTML = "";
+
+                    let programaDiv = document.createElement("div")
+                    programaDiv.className = "infoDiv"
+                    
+                    let programa = document.createElement("div")
+                    programa.className = "pdf"
+                    programa.innerHTML =  `<object width="100%" data="programa.pdf"></object>`
+                    
+
+                    programaDiv.appendChild(programa)
+                    mainText.appendChild(programaDiv);
+            }
 
           else if (isMobileDevice() == true){
 
@@ -160,6 +160,9 @@ for (let index = 0; index < linkList.length; index++) {
 
         }
 
+       
+
+
         if (event.target.id == "cronograma") {
             progLink = document.createElement("a")
             progLink.setAttribute("href", "./cronograma.pdf")
@@ -167,6 +170,35 @@ for (let index = 0; index < linkList.length; index++) {
             progLink.click()
 
         }
+
+        if (event.target.id == "bibliografia") {
+            carrouselConcealer();
+            mainText.innerHTML = "";
+
+            let infoDiv = document.createElement("div")
+            infoDiv.className = "infoDiv"
+            
+            let infobasicaTitulo = document.createElement("h2")
+            infobasicaTitulo.className = "infobasicaTitulo"
+            infobasicaTitulo.innerHTML = `Bibliografía Obligatoria`
+
+
+            let infobasicaCuerpo = document.createElement("h2")
+            infobasicaCuerpo.className = "infobasicaCuerpo"
+            infobasicaCuerpo.innerHTML = `<a href="https://drive.google.com/open?id=1t3eLQdNGux1rcE7eskNmRKQJYC6Kr9hA"> Handbook of Psychophysiology </a>`
+
+
+            infoDiv.appendChild(infobasicaTitulo);
+            infoDiv.appendChild(infobasicaCuerpo);
+
+            mainText.appendChild(infoDiv);
+            navCollapse.classList = "collapse navbar-collapse"
+
+        }
+
+
+
+
 
         //TP
         if (event.target.id == "trabajoPractico") {
