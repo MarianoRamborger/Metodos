@@ -160,6 +160,14 @@ for (let index = 0; index < linkList.length; index++) {
 
         }
 
+        if (event.target.id == "cronograma") {
+            progLink = document.createElement("a")
+            progLink.setAttribute("href", "./cronograma.pdf")
+            progLink.setAttribute("download", "./cronograma.pdf")
+            progLink.click()
+
+        }
+
         //TP
         if (event.target.id == "trabajoPractico") {
             carrouselConcealer();
