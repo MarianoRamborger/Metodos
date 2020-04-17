@@ -185,8 +185,13 @@ for (let index = 0; index < linkList.length; index++) {
 
             let infobasicaCuerpo = document.createElement("h2")
             infobasicaCuerpo.className = "infobasicaCuerpo"
-            infobasicaCuerpo.innerHTML = `<a href="https://drive.google.com/open?id=1t3eLQdNGux1rcE7eskNmRKQJYC6Kr9hA"> Handbook of Psychophysiology </a>`
+            infobasicaCuerpo.innerHTML = `<a href="https://drive.google.com/open?id=1t3eLQdNGux1rcE7eskNmRKQJYC6Kr9hA"> Handbook of Psychophysiology </a>   <br/> <br/>
+            <a href="https://drive.google.com/open?id=1KWH2rkBP-yAhAKJIxWrBOiEWGIW6kkwY"> Discovering Statistics </a>     <br/>  <br/>
+            <a href="https://drive.google.com/open?id=1XL58vBawwleQqO3XieID8exTYA9xzMoq"> Resonancia magnética funcional </a> 
+            `
 
+
+            
 
             infoDiv.appendChild(infobasicaTitulo);
             infoDiv.appendChild(infobasicaCuerpo);
