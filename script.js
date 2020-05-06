@@ -376,7 +376,7 @@ for (let index = 0; index < linkList.length; index++) {
             createLinks(
                 "Clase práctica de EEG",
                 ["Clase 1"],
-                ["drive.google.com/open?id=19E9BJg19_GbXRRXbYqcL4I8-zoEUGO2O]"],
+                ["drive.google.com/open?id=19E9BJg19_GbXRRXbYqcL4I8-zoEUGO2O"],
                 [
                 "drive.google.com/open?id=1f5_u7Ihd3BTq5WmSTI7e9J4NHJC-2F2M",
                 "drive.google.com/open?id=1KT3zLqa7bvPNUfbl3VwGpYNpHe02Pmv5", 
