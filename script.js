@@ -354,8 +354,8 @@ for (let index = 0; index < linkList.length; index++) {
         if (event.target.id == "pr__estadistica") {
             createLinks(
                 "Clase práctica de estadistica",
-                ["Clase 1"],
-                ["drive.google.com/open?id=1IHxc1DVz9_pzvMhrsX8Hwvm_6Ewo3aUI"],
+                ["Clase 1", "Clase 2 (La que dió Vale)"],
+                ["drive.google.com/open?id=1IHxc1DVz9_pzvMhrsX8Hwvm_6Ewo3aUI", "drive.google.com/file/d/11D2pNLeY_W04mPdlYEWbI8nVmpwkwAlh/view?usp=sharing"],
                 [], []
 
             )
