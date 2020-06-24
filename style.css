@@ -14,7 +14,10 @@ html, body {
   }
   .content {
     flex: 1 0 auto;
-    background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 13%, rgba(183,222,237,1) 100%);
+    background: 
+    -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 13%, rgba(183,222,237,1) 100%) !important;
+    background: linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 13%, rgba(183,222,237,1) 100%) !important;
+    background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 13%, rgba(183,222,237,1) 100%) !important;
 
     
   }
