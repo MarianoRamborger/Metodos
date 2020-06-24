@@ -5,6 +5,7 @@ carrouselHidden = false;
 let carrousel = document.querySelector("#carouselExampleControls")
 let mainText = document.querySelector("#mainText")
 let navCollapse = document.getElementById("navbarNavDropdown")
+let progDisplay = document.getElementById("prog-display")
 
 
 
@@ -58,6 +59,7 @@ for (let index = 0; index < linkList.length; index++) {
         if (event.target.innerHTML == "Home" && carrouselHidden == true) {
             carrousel.classList.toggle("hide")
             mainText.innerHTML = "";
+            progDisplay.innerHTML = ""
             carrouselHidden = false;
             navCollapse.classList = "collapse navbar-collapse"
         }
@@ -65,6 +67,7 @@ for (let index = 0; index < linkList.length; index++) {
         if (isMobileDevice() == true) {
             carrouselConcealer();
             mainText.innerHTML = "";
+            progDisplay.innerHTML = ""
 
             let infoDiv = document.createElement("div")
             infoDiv.className = "infoDiv"
@@ -98,6 +101,7 @@ for (let index = 0; index < linkList.length; index++) {
         if (event.target.id == "info") {
             carrouselConcealer();
             mainText.innerHTML = "";
+            progDisplay.innerHTML = ""
 
             let infoDiv = document.createElement("div")
             infoDiv.className = "infoDiv"
@@ -129,6 +133,7 @@ for (let index = 0; index < linkList.length; index++) {
 
                     carrouselConcealer();
                     mainText.innerHTML = "";
+                    progDisplay.innerHTML = ""
 
                     let programaDiv = document.createElement("div")
                     programaDiv.className = "infoDiv"
@@ -139,7 +144,7 @@ for (let index = 0; index < linkList.length; index++) {
                     
 
                     programaDiv.appendChild(programa)
-                    mainText.appendChild(programaDiv);
+                    progDisplay.appendChild(programaDiv);
             }
 
           else if (isMobileDevice() == true){
@@ -174,6 +179,7 @@ for (let index = 0; index < linkList.length; index++) {
         if (event.target.id == "bibliografia") {
             carrouselConcealer();
             mainText.innerHTML = "";
+            progDisplay.innerHTML = ""
 
             let infoDiv = document.createElement("div")
             infoDiv.className = "infoDiv"
@@ -209,6 +215,7 @@ for (let index = 0; index < linkList.length; index++) {
         if (event.target.id == "trabajoPractico") {
             carrouselConcealer();
             mainText.innerHTML = "";
+            progDisplay.innerHTML = ""
            
             let tpDiv = document.createElement("div")
             tpDiv.className = "tpDiv"
@@ -451,6 +458,7 @@ let createLinks = (clase, titulObligatorio, obligatorios, optativos, titulOptati
 
 carrouselConcealer();
 mainText.innerHTML = "";
+progDisplay.innerHTML = ""
 
 let teoDiv = document.createElement("div")
 teoDiv.className = "tpDiv"
@@ -498,6 +506,7 @@ mainText.appendChild(teoDiv)
 let createMemPage = () => {
     carrouselConcealer();
             mainText.innerHTML = "";
+            progDisplay.innerHTML = ""
 
             let miembros = [
                 { 
@@ -585,6 +594,7 @@ let createMemPage = () => {
 let expandMiembro = (miembro) => {
     carrouselConcealer();
     mainText.innerHTML = ""
+    progDisplay.innerHTML = ""
 
     let memDiv = document.createElement("div")
     memDiv.className = "memDiv"
