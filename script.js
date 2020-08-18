@@ -280,8 +280,9 @@ for (let index = 0; index < linkList.length; index++) {
                 "Clase de electroencefalografía & potenciales relacionados a eventos.",
                 ["Clase 1", "Clase 2"],
                 ["drive.google.com/open?id=1zzkmfUUtlvUiJ2EN1MO4V35ZCANzPOwZ","drive.google.com/open?id=1R8EjS1lDAiOCNUMSeYnwvkNKkLzJYtOQ"],
-                ["drive.google.com/open?id=1f5_u7Ihd3BTq5WmSTI7e9J4NHJC-2F2M"],
-                ["EEG booklet"]
+                [ "drive.google.com/open?id=1f5_u7Ihd3BTq5WmSTI7e9J4NHJC-2F2M", "youtube.com/watch?v=F1EdZ5a4qm8","youtube.com/watch?v=_ZNptL1yYxQ","youtube.com/watch?v=RfjpD9DNx18","youtube.com/watch?v=G7_H-FZ65Y8"], 
+                ["EEG booklet","Video ERP 1", "Video ERP 2", "Video ERP 3", "Video ERP 4"]
+              
             )
             navCollapse.classList = "collapse navbar-collapse"
         }
@@ -304,8 +305,8 @@ for (let index = 0; index < linkList.length; index++) {
                 "Clase de Resonancia Magnética Funcional",
                 ["Clase 1"],
                 ["drive.google.com/open?id=1wwgfyT0oju3A5eHy_DgCm-dJFRAu7Grn"],
-                [],
-                []
+                ["youtube.com/watch?v=TNcwHUijRjg&feature=youtu.be","youtube.com/watch?v=EPrFWXkOAsI","youtube.com/watch?v=cB26XJSkWos&t=4s"],
+                ["Video fMRI 1", "Video fMRI 2", "Video fMRI 3"]
             )
             navCollapse.classList = "collapse navbar-collapse"
         }
@@ -352,8 +353,8 @@ for (let index = 0; index < linkList.length; index++) {
                 "Clase de paper",
                 ["Clase 1", "Como hacer el TP"],
                 ["drive.google.com/open?id=14HH_seJarnpW0pbWA6zHlaDU2GhAKl0H", "drive.google.com/open?id=1GBeo5llXbDfIWS-oA0CP2XlYjMRParXd"],
-                ["drive.google.com/open?id=1dfCd-bOKYTkLKYpKMD5gEL-W4ScAZG8u"],
-                ["Como obtener papers."]
+                ["drive.google.com/open?id=1dfCd-bOKYTkLKYpKMD5gEL-W4ScAZG8u", "youtube.com/watch?v=FLB7jR_lN94","youtu.be/l0U0E4ehtxo","youtu.be/1wy4jIaS0yY","youtu.be/u5a_1pnlpw8"],
+                ["Como obtener papers.", "Presentación de papers 1","Presentación de papers 2","Presentación de papers 3","Presentación de papers 4"]
             )
             navCollapse.classList = "collapse navbar-collapse"
         }
@@ -409,7 +410,7 @@ for (let index = 0; index < linkList.length; index++) {
                 "Clase Práctica de potenciales evocados",
                 ["Clase 1"],
                 ["drive.google.com/open?id=1nHCkDUlIn85E7498p_4eU_kVSsFeS4OG"],
-                [], []
+                [],[]
             )
             navCollapse.classList = "collapse navbar-collapse"
         }
@@ -474,7 +475,7 @@ TeoOblig.innerHTML = "Lectura Obligatoria"
 
 let teoOpcional = document.createElement("h4")
 teoOpcional.className = "h4__style"
-teoOpcional.innerHTML = "Lectura Complementaria"
+teoOpcional.innerHTML = "Material Complementario"
 
 teoDiv.appendChild(teoIntro)
 teoDiv.appendChild(TeoOblig)
