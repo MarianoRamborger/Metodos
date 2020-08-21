@@ -253,8 +253,8 @@ for (let index = 0; index < linkList.length; index++) {
 
             createLinks(
                 "Clase teórica de diseño experimental",
-                ["Diseño Experimental"],
-                ["drive.google.com/open?id=1WCFEiZXmxUEzMEdhyNq_8iO308xzoaWT"],
+                ["Diseño Experimental","Neurociencia y Psicología"],
+                ["drive.google.com/file/d/10RndNFNcTiWNlrRxaC-afA0-SaJ5P498/view?usp=sharing","drive.google.com/open?id=1WCFEiZXmxUEzMEdhyNq_8iO308xzoaWT"],
                 ["drive.google.com/file/d/1gLZULAkNb2n_Z_yOEFIOExqdnsqdbDM8/view?usp=sharing"],
                 ["Experimental Design booklet"]
             )
