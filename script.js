@@ -233,9 +233,14 @@ for (let index = 0; index < linkList.length; index++) {
             tp2.className = "tpLinks"
             tp2.innerHTML = `<a href="TP2.docx"> Instrucciones Trabajo Práctico 2 </a>`
 
+            let tp3 = document.createElement("p")
+            tp3.className = "tpLinks"
+            tp3.innerHTML = `<a href="TP3.docx"> Instrucciones Trabajo Práctico 3 </a>`
+
             tpDiv.appendChild(tpIntro)
             tpDiv.appendChild(tp1);
             tpDiv.appendChild(tp2);
+            tpDiv.appendChild(tp3);
 
             mainText.appendChild(tpDiv)
             navCollapse.classList = "collapse navbar-collapse"
